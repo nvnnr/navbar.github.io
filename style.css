@@ -1,0 +1,85 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    size: 1080px;
+}
+body{
+    background-image:url(/nature\ hills.jpg) ;
+    font-family: sans-serif;
+}
+.menu_bar{
+    background: rgb(255, 0, 106);
+    text-align: center;
+}
+.menu_bar ul{
+    display: inline-flex;
+    list-style: none;
+    color: white;
+   
+}
+.menu_bar ul li{
+    width: 120px;
+    margin: 15px;
+    padding: 15px;
+}
+.menu_bar ul li a{
+    text-decoration: none;
+    color: white;
+}
+.active, .menu_bar ul li :hover{
+background:  rgb(255, 2, 82);
+}
+.menu_bar.fa{
+    margin-right: 18px;
+}
+.sub-menu-1{
+    display: none;
+} 
+.menu_bar ul li:hover .sub-menu-1
+{
+    display: block;
+    position: absolute;
+    background: rgb(240, 2, 61);
+    margin-top: 15px;
+    margin-left: -15px;
+} 
+.menu_bar ul li:hover .sub-menu-1 ul{
+    display: block;
+    margin: 10px;
+    
+}
+.menu_bar ul li:hover .sub-menu-1 ul li{
+    width: 150px;
+    padding: 10px;
+    background: transparent;
+    border-bottom: 1px dotted #e2caca65;
+    border-radius: 0px;
+    text-align: left;
+}
+.menu_bar ul li:hover .sub-menu-1 ul li:last-child{
+    border-bottom: none;
+}
+.menu_bar ul li:hover .sub-menu-1 ul li a:hover{
+    background-color: rgba(25, 0, 12, 0.984);
+    transition: 0.5s;
+    border-radius: 10px;
+    
+}
+.fa-angle-right{
+    float: right;
+}
+.sub-menu-2{
+    display: none;
+}
+.hover-me:hover .sub-menu-2{
+    position: absolute;
+    display: block;
+    margin-top: -40px;
+    margin-left: 140px;
+    background: crimson;
+}
